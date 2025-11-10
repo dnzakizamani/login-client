@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment variables (keep .env.example if exists)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.Spotlight-V100
+.Trashes
+Icon?
+VolumeIcon.icns
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Temporary folders
+tmp/
+temp/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# npm debug log
+npm-debug.log*
+
+# Yarn files
+.yarn/
+.yarnrc.yml
+
+# React / Frontend frameworks
+.next/
+.nuxt/
+.vuepress/dist/
+.vuepress/.cache/
+
+# Python residuals (if mixing backend tech)
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.pyre/
+.pytype/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
