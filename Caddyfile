@@ -1,4 +1,4 @@
 dash.dnzaki.my.id {
     encode zstd gzip
-    reverse_proxy app:80
+    reverse_proxy localhost:3485
 }
