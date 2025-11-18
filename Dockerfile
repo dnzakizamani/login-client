@@ -1,5 +1,8 @@
 FROM node:18-alpine AS builder
 
+# Install build dependencies for Alpine
+RUN apk add --no-cache python3 make g++
+
 WORKDIR /app
 COPY package*.json ./
 COPY package-lock.json ./
@@ -16,6 +19,8 @@ COPY .env* ./
 COPY src/ ./src/
 COPY index.html ./
 
+# Increase memory limit for Node.js during build
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN npm run build
 
 FROM nginx:alpine AS production
