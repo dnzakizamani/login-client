@@ -18,6 +18,7 @@ COPY .env* ./
 # Copy source code
 COPY src/ ./src/
 COPY index.html ./
+COPY public/ ./public/
 
 # Increase memory limit for Node.js during build
 ENV NODE_OPTIONS="--max-old-space-size=4096"
